@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>WebAgenda</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.PNG" alt="capelo e diploma">
+            <h1>Agenda Telefônica</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="nome-agenda" required placeholder="Nome:"/>
+            <input type="text" id="telefone-agenda" required placeholder="Telefone:" min="0"/>
+            <div class="button-container">
+                <button type="submit">Agendar</button>
+                <img src="./images/celular.PNG" alt="Celular" class="button-image">
+            </div>
+            
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Registrado</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="nome-registrado">---</td>
+                    <td id="telefone-registrado">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
